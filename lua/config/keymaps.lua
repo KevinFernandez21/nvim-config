@@ -61,44 +61,6 @@ keymap('n', '<leader>fr', ':Telescope oldfiles<CR>', { desc = 'Archivos reciente
 -- Buscar ayuda
 keymap('n', '<leader>fh', ':Telescope help_tags<CR>', { desc = 'Buscar ayuda' })
 
--- Mostrar información de la función bajo el cursor
-keymap('n', 'K', vim.lsp.buf.hover, { desc = 'Mostrar información' })
-
--- Ir a la definición
-keymap('n', 'gd', vim.lsp.buf.definition, { desc = 'Ir a la definición' })
-
--- Ir a la declaración
-keymap('n', 'gD', vim.lsp.buf.declaration, { desc = 'Ir a la declaración' })
-
--- Mostrar referencias
-keymap('n', 'gr', vim.lsp.buf.references, { desc = 'Mostrar referencias' })
-
--- Renombrar símbolo
-keymap('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Renombrar símbolo' })
-
--- Mostrar acciones de código
-keymap('n', '<leader>ca', vim.lsp.buf.code_action, { desc = 'Acciones de código' })
-
--- Formatear el archivo actual
-keymap('n', '<leader>fm', vim.lsp.buf.format, { desc = 'Formatear archivo' })
-
--- Iniciar/continuar la depuración
-keymap('n', '<leader>dc', require('dap').continue, { desc = 'Iniciar/continuar depuración' })
-
--- Establecer/eliminar breakpoint
-keymap('n', '<leader>db', require('dap').toggle_breakpoint, { desc = 'Establecer breakpoint' })
-
--- Paso a paso por instrucción
-keymap('n', '<leader>ds', require('dap').step_over, { desc = 'Paso a paso por instrucción' })
-
--- Paso a paso dentro de la función
-keymap('n', '<leader>di', require('dap').step_into, { desc = 'Paso a paso dentro de la función' })
-
--- Paso a paso fuera de la función
-keymap('n', '<leader>do', require('dap').step_out, { desc = 'Paso a paso fuera de la función' })
-
--- Abrir el dashboard
-keymap('n', '<leader>d', ':Alpha<CR>', { desc = 'Abrir dashboard' })
 
 -- Abrir una terminal en una ventana flotante
 keymap('n', '<leader>tt', ':ToggleTerm<CR>', { desc = 'Abrir terminal flotante' })
